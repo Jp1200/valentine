@@ -1,0 +1,28 @@
+body {
+}
+
+chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+text {
+  text-anchor: middle;
+  fill: #8a0707;
+  font-size: 28px;
+  /*font-weight: 700;*/
+  opacity: 0.9;
+}
+
+path {
+  stroke: #8a0707;
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.4;
+}
+
+circle {
+  fill: #8a0707;
+  opacity: 0.9;
+}
