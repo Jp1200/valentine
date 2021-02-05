@@ -1,6 +1,71 @@
-body {
+header {
+  font-size: 42pt;
+  font-weight: 800;
+  font-style: bold;
+  font-family: cursive;
+  box-shadow: 0;
+  position: relative;
+  top: 50px;
+}
+.btn {
+  background: transparent;
+  border-color: black;
+  width: 180px;
+  height: 60px;
+  border: 1px solid #f83636;
+
+  /* #2 */
+  padding: 5px;
+  margin: 20px;
+  /* #4 AND INFINITY!!! (CSS3 only) */
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  position: relative;
+  top: 100px;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+/* .btn:hover {
+  width: 145px;
+} */
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+.underline {
+  background-repeat: repeat-x;
+}
+.underline--emoji {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/heart.png");
+  background-position: 0 1.06em;
+  background-size: 15px 9px;
+  color: #e8665f;
+}
+.btn:hover {
+  transition: 1s ease-in-out;
 }
 
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  font-style: bold;
+  font-family: cursive;
+  font-size: 28px;
+  font-weight: 400;
+}
 chart {
   display: block;
   margin-left: auto;
@@ -25,4 +90,43 @@ path {
 circle {
   fill: #8a0707;
   opacity: 0.9;
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.heart {
+  z-index: 999;
+  animation: heartfade 6s linear;
+  position: absolute;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fc2a62;
+  position: absolute;
+  height: 30px;
+  width: 45px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.heart:before {
+  transform: rotate(45deg);
+}
+
+.heart:after {
+  left: 10.5px;
+  transform: rotate(135deg);
 }
