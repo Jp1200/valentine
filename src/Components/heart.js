@@ -1,9 +1,15 @@
-import React from 'react';
-import * as d3 from "d3";
+import React, {useState} from 'react';
+// import * as d3 from "d3";
 import './heartcss.css';
-
-
+import Poem from './poems.js';
+function yes(){
+    console.log('yes')
+}
+function no(){
+    alert("Ummm you actualy can't click that option....")
+}
 function Heart(){
+    const poem_vis = useState("true")
 //     // window.onerror = function() {
 //     //     location.reload();
 //     // }
@@ -76,20 +82,21 @@ function Heart(){
                 Nikki, will you be my Valentine?
             </header>
             <div classNamee='btn-holder'>
-                <button className='btn'>
+                <button className='btn' onClick={yes}>
                     <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                     </svg>
                     <span className='unselectable'>Yes (;</span>
                 </button>
-                <button className='btn'><svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <button className='btn' onClick={no}><svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                     </svg>
                     <span className='unselectable'>No );</span>
                 </button>
             </div>
+            <Poem></Poem>
         </div>
     )
 
