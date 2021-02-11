@@ -59,13 +59,22 @@ I shall but love thee better after death.`}
 
 };
 export default class Poem extends React.Component{
-    state = {poems: poems}
+    constructor(props) {
+        super(props)
+        this.state = {poem: poems};
+      }
+      
     render(){
         return(
-            <div className='poem'>
-                <p>
-
+            <div className="poem">
+                <div>
+                <span className="title">{this.state.poem["poems"][this.props.rand]["title"]}</span>
+                <p className='poem-p unselectable'>
+                    
+                    {this.state.poem["poems"][this.props.rand]["lines"]}
                 </p>
+                <span className="author">{this.state.poem["poems"][this.props.rand]["author"]}</span>
+                </div>
             </div>
             );
     }

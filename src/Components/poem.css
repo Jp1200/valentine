@@ -1,23 +1,55 @@
 .poem {
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-  background: #c31432; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c31432,
-    #240b36
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #c31432,
-    #240b36
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-self: center;
+
+  margin: auto;
+  border: 3px solid;
+  border-color: black;
+  transition: 1.5s all ease-in-out;
+  animation: yes;
+  height: fit-content;
+  width: 65vw;
+  opacity: 0.5;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  transform: translateY(-200%);
+}
+.poem.show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background:#f00; /* Uncomment to see the affected area */
+  transform: translateY(60%);
 }
 .poem-p {
+  line-height: 26px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
   color: black;
-  font-size: 22pt;
+  font-size: 20pt;
   font-style: italic;
   font-family: cursive;
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.title {
+  font-size: 26pt;
+  font-weight: bold;
+}
+.author {
+}
+@keyframes yes {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(60%);
+  }
 }
