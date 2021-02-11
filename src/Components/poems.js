@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React from 'react';
 import './poem.css';
 const poems ={"poems":[{"title":"Love Sonnet XI", "author": "P.Neruda", "lines": `I crave your mouth, your voice, your hair.
 Silent and starving, I prowl through the streets.
@@ -20,22 +20,12 @@ I want to eat the fleeting shade of your lashes,
 and I pace around hungry, sniffing the twilight,
 hunting for you, for your hot heart,
 like a puma in the barrens of Quitratue.`},
-{"title":"When William Stafford Died", "author": "Robert Bly", "lines": `Well, water goes down the Montana gullies.
-"I'll just go around this rock and think
-About it later." That's what you said.
-When death came, you said, "I'll go there."
-There's no sign you'll come back. Sometimes
-My father sat up in the coffin and was alive again.
-But I think you were born before my father,
-And the feet they made in your time were lighter.
-One dusk you were gone. Sometimes a fallen tree
-Holds onto a rock, if the current is strong.
-I won't say my father did that, but I won't
-Say he didn't either. I was watching you both.
-If all a man does is to watch from the shore,
-Then he doesn't have to worry about the current.
-But if affection has put us into the stream,
-Then we have to agree to where the water goes.`},
+{"title":"Secret Sea", "author": "JP", "lines": `Secret sea, wait to see. 
+I miss the sand, beneath my feet.
+Secret sea, where lovers meet.
+Where love is Heavens' reach.
+without such, is not much treat.
+`},
 {"title":"How Do I Love Thee?", "author": "Elizabeth Barrett Browning", "lines": `How do I love thee? Let me count the ways.
 I love thee to the depth and breadth and height
 My soul can reach, when feeling out of sight
@@ -63,7 +53,9 @@ export default class Poem extends React.Component{
         super(props)
         this.state = {poem: poems};
       }
-      
+    componentDidMount=(e)=>{
+        console.log("mounted")
+    }
     render(){
         return(
             <div className="poem">

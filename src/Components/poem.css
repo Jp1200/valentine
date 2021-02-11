@@ -4,13 +4,13 @@
   margin: auto;
   border: 3px solid;
   border-color: black;
-  transition: 1.5s all ease-in-out;
+  transition: 2s all ease-in-out;
   animation: yes;
   height: fit-content;
   width: 65vw;
-  opacity: 0.5;
+  opacity: 0.66;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  transform: translateY(-200%);
+  transform: translateY(-300%);
 }
 .poem.show {
   position: absolute;

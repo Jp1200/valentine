@@ -2,9 +2,7 @@ import React, {useState} from 'react';
 // import * as d3 from "d3";
 import './heartcss.css';
 import Poem from './poems.js';
-function yes(){
-    console.log(document.getElementsByClassName('poem'))
-}
+
 function no(){
     alert("Ummm you actualy can't click that option....")
 }
