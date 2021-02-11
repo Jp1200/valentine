@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/valentine/static/css/main.a8b04bb3.chunk.css",
+    "main.js": "/valentine/static/js/main.9f683c68.chunk.js",
+    "main.js.map": "/valentine/static/js/main.9f683c68.chunk.js.map",
+    "runtime-main.js": "/valentine/static/js/runtime-main.3705797b.js",
+    "runtime-main.js.map": "/valentine/static/js/runtime-main.3705797b.js.map",
+    "static/js/2.fb5b9325.chunk.js": "/valentine/static/js/2.fb5b9325.chunk.js",
+    "static/js/2.fb5b9325.chunk.js.map": "/valentine/static/js/2.fb5b9325.chunk.js.map",
+    "static/js/3.9f11830e.chunk.js": "/valentine/static/js/3.9f11830e.chunk.js",
+    "static/js/3.9f11830e.chunk.js.map": "/valentine/static/js/3.9f11830e.chunk.js.map",
+    "index.html": "/valentine/index.html",
+    "static/css/main.a8b04bb3.chunk.css.map": "/valentine/static/css/main.a8b04bb3.chunk.css.map",
+    "static/js/2.fb5b9325.chunk.js.LICENSE.txt": "/valentine/static/js/2.fb5b9325.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3705797b.js",
+    "static/js/2.fb5b9325.chunk.js",
+    "static/css/main.a8b04bb3.chunk.css",
+    "static/js/main.9f683c68.chunk.js"
+  ]
+}
